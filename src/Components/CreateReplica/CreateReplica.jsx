@@ -51,7 +51,7 @@ const CreateReplica = () => {
 
     try {
       const response = await axios.post(
-        "/api/replicas",
+        "https://backend-beta-sepia-41.vercel.app/api/replicas",
         formDataToSubmit,
         {
           headers: {

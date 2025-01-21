@@ -24,7 +24,7 @@ const Replica = () => {
 
   const fetchReplicas = async () => {
     try {
-      const response = await axios.get("/api/replicas");
+      const response = await axios.get("https://backend-beta-sepia-41.vercel.app/api/replicas");
       if (response.data && response.status === 200) {
         setReplicas(response.data || []);
         setFilteredReplicas(response.data || []); // Initialize filtered replicas
